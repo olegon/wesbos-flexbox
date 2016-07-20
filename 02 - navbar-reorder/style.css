@@ -28,19 +28,40 @@ a {
     transition: all 500ms;
 }
 
-
-
 a:hover {
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    margin-top: 25px;
+}
+
+.top h1 {
+    margin: 0;
+}
+
+.flex-nav {
+    margin-top: 25px;
+}
+
+.toggleNav {
+    display: none;
 }
 
 .flex-nav ul {
+    transition: height 500ms, opacity 500ms;
     display: flex;
 
     margin: 0;
@@ -58,13 +79,13 @@ a:hover {
 }
 
 .hero {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin: 25px auto;
     padding: 25px;
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hero img {
@@ -72,28 +93,40 @@ a:hover {
 }
 
 .details {
+    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 25px auto;
     padding: 25px;
     text-align: center;
 }
 
 section.signup {
+    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 25px auto;
     padding: 25px;
 }
 
+form.signup {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+form.signup input {
+    /*flex: 1;*/
+}
+
 footer {
+    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 25px auto;
-    padding: 0.25em 0;
     text-align: center;
 }
 
 
 
 @media all and (max-width: 1000px) {
+    .top {
+        margin-top: 0;
+    }
+
     .flex-nav ul {
         flex-wrap: wrap;
     }
@@ -108,6 +141,19 @@ footer {
 }
 
 @media all and (max-width: 500px) {
+    .top {
+        margin-top: 25px;
+    }
+
+    .flex-nav {
+        margin-top: 0;
+        order: -1;
+    }
+
+    .toggleNav {
+        display: inline-block;
+    }
+
     .flex-nav ul {
         flex-wrap: wrap;
     }
@@ -119,4 +165,6 @@ footer {
     .flex-nav .social {
         flex-basis: 50%;
     }
+
+
 }
