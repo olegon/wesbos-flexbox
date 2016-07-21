@@ -58,6 +58,7 @@ img {
 /* Flex-item - Arrow */
 .slider-nav .arrow {
     flex: 1;
+    font-size: 2em;
 }
 
 .slider-nav li a {
