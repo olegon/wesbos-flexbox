@@ -23,3 +23,13 @@ Elas consistem em vários exemplos e em aprender a usar o guia do flexbox:
 > `flex-basis` allows you to specify the initial/starting size of the element, before anything else is computed. It can either be a percentage or an absolute value.
 
 > It is, however, not the breaking point for flex-grow/shrink properties. The browser determines when to wrap the element on the basis of if the initial sizes of elements exceed the width of the cross-axis (in conventional sense, that is the width).
+
+## From [this *awesome* Sara Soueidan article](http://tympanus.net/codrops/css_reference/flexbox/).
+
+> Note that the flex-grow property is animatable, except between the value zero (0) and other values.
+
+> Note that the flex-shrink property is animatable, except between the value zero (0) and other values.
+
+> Note that, by default, flex items won’t shrink below their minimum content size (the length of the longest word or fixed-size element). To change this, set the min-width or min-height property.
+
+
